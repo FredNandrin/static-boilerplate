@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-EN">
+    <form>
+        <block>
+            <prompt>
+                Welcome to "hôtel Ô chômière" !
+            </prompt>
+            <prompt>
+                We are not available at the moment.
+            </prompt>
+            <prompt>
+                Please leave a message after the beep.
+            </prompt>
+        </block>
+    </form>
+</vxml>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xml:lang="fr-FR">
+    <menu>
+        <prompt xml:lang="fr-FR">Pour le français, tapez 1</prompt>
+        <prompt xml:lang="nl-NL">Voor nederlands druk op 2</prompt>
+        <prompt xml:lang="en-EN">For english press 3</prompt>
+        <choice dtmf="1" next="fr.xml"> francais </choice>
+        <choice dtmf="2" next="nl.xml"> nederlands </choice>
+        <choice dtmf="3" next="en.xml"> english </choice>
+    </menu>
+
+    <form id="fr">
+        <goto next="fr.xml" />
+    </form>
+    <form id="nl">
+        <goto next="nl.xml" />
+    </form>
+    <form id="en">
+        <goto next="en.xml" />
+    </form>
+
+    <form id="commercial">
+        <transfer name="services" dest="number/0972xxxxx2">
+        </transfer>
+    </form>
+
+    <form id="legal">
+        <transfer name="services" dest="number/0972xxxxx3">
+        </transfer>
+    </form>
+</vxml>
