@@ -1,0 +1,22 @@
+include ../mixin/header-mixin
+// file master-view.pug
+doctype html
+html(lang='en')
+    head
+        title My Blog
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(href='/style.css', rel='stylesheet')
+        link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
+        link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
+        link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
+        link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
+        link(rel='shortcut icon', href='/ico/favicon.png')
+    body
+        .container-narrow
+            +header
+            block content
+            .footer
+                p &copy; Company 2012
+        include ../partials/scripts

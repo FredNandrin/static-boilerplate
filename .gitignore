@@ -1,1 +1,4 @@
 opt/nginx/log/*
+.idea
+opt/www/*
+node_modules

@@ -1,0 +1,17 @@
+extends layout/master-view.pug
+
+block content
+  - var language = "Pug"
+  - var name = "Fred"
+  .jumbotron
+    h1 Bootstrap examples, in Pug!
+    p.lead
+      | The Bootstrap 2.3.2 examples translated into Pug and instantly ready to view with Express
+    a.btn.btn-large.btn-success(href='https://github.com/timReynolds/pug-bootstrap-examples') Source on Github
+  .container
+    h2= language
+    p Cool #{language} example!
+    h3= foo || 'foo'
+    p Hello !{'<?php echo "My name"; ?>'}
+    p #{name}'s Pug source code !!!!
+    a.foo_link(href='about.html', target='_blank') About Us
